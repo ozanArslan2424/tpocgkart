@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="Ozan Arslan" />
+  <meta name="description" content="TPÖÇG Kart başvuru sitesi." />
+  <title>TPÖÇG Kart</title>
+  <link rel="icon" href="images/weblogo2.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="css-file-card.css" />
+  <script src="js-file-card.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+
+  <!-- ANIMATION INTRO -->
+  <div class="intro">
+    <div class="logo-header">
+      <img class="logo frame1" src="images/anim/frame-1.svg">
+      <img class="logo frame2" src="images/anim/frame-2.svg">
+    </div>
+  </div>
+
+  <img class="wires" src="images/wires.svg" alt="">
+  <!-- FLOATING IMAGES -->
+  <div class="floating">
+    <img class="cup" src="images/png/cup_right.png" alt="" />
+    <img class="mug" src="images/png/mug_left.png" alt="" />
+    <img class="wallet" src="images/png/wallet_left.png" alt="" />
+    <img class="marker" src="images/png/marker_right.png" alt="" />
+  </div>
+
+
+
+  <!-- HEADER & NAV-->
+  <header>
+    <nav>
+      <div class="nav-container flex">
+        <img class="weblogo" alt="TPÖÇG Kart" src="images/weblogo.svg" />
+        <ul class="links flex">
+          <li class="offers trnst"><a href=#availableAt>Nerelerde geçerli?</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+
+          <li class="other-web trnst">
+            <div class="dropdown-menu">
+              <button class="menu-btn">Diğer sitelerimiz <span class="arrow">V</span></button>
+              <div class="menu-content">
+                <a class="links-hidden" href="https://www.tpocg.org/">TPÖÇG Ana Sayfa</a>
+                <a class="links-hidden" href="http://psinossa.tpocg.org/">PsiNossa Dergi</a>
+                <a class="links-hidden" href="https://www.tpocg.org/blog/">Akıl Defterim Blog</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="apply trnst"><button type="button" onclick="location.href='#applyFor'" class="trnst">KARTINI
+              AL!</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <section class="hero">
+      <div id="heroSec" class="scaled">
+        <img class="promotional" src="images/tpocgupok.jpeg" alt="Tanıtıcı görsel 1" />
+        <div class="text">
+          <h1>TPÖÇG Kart nedir?</h1>
+          <p>
+            TPÖÇG Kart, Sponsorluk Ekibi'nin emekleriyle sağlanan, TPÖÇG üyelerine özel bir indirim kartıdır. Bu kartı
+            gönüllü çalışmalarınızın bir karşılığı
+            olarak düşünebilirsiniz. TPÖÇG Kart sayesinde bir sonraki kafe ziyaretinizde ve alışverişlerinizde özel
+            indirimlerden yararlanabileceksiniz.
+            <br><br>
+            Size özel fırsatlarla dolu bu kartı edinerek TPÖÇG ailesinden olmanın gururunu yaşayın!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="available" id="availableAt">
+      <div id="availableSec">
+        <h2>Nerelerde geçerli?</h2>
+
+        <div id="brandList">
+
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section class="applyforcard" id="applyFor">
+      <div id="applySec">
+        <h2>Kendi kartını hazırla!</h2>
+        <div id="application" class="scaled">
+
+          <form class="form glass">
+            <h3 class="title">Yalnızca adınız soyadınız yeterli.</h3>
+            <p class="description">Halihazırda TPÖÇG çalışanı olan herkes TPÖÇG Kart çıkarmaya hakkına sahip.</p>
+            <div>
+              <input type="text" placeholder="Ad Soyad" id="name" name="name" required>
+              <button type="button" id="submitCard">Oluştur!</button>
+            </div>
+          </form>
+
+          <div id="cardDwnld" class="cardimage-wrapper flex glass">
+            <div class="cardimage" id="cardImg">
+              <img class="bg placed" src="images/cardfront.png" alt="kart ön görseli">
+            </div>
+
+            <img class="bgback" src="images/cardback.png" alt="kart arka görseli">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="flex center">
+    <p class="credits"><i> Created by <a id="OzanArslanWeb" href="#">Ozan Arslan</a>, for <a id="TpocgWeb"
+          href="https://www.tpocg.org/">TPÖÇG</a> use only. </i> &#169; 2023</p>
+
+  </footer>
+
+
+</body>
+
+
+</html>
