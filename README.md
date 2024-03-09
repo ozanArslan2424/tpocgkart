@@ -4,6 +4,7 @@ Kart, bildiğim kadarıyla hiçbir zaman fiziksel hale getirilmese de kartı tan
 Saf HTML, CSS ve JavaScript kullanmanın yanında html2canvas CDN'ini kullanarak kart sahiplerinin kendilerine özel kar görselini kaydedebilmesini amaçladım. 
 
 En amatör çalışmam olmasına rağmen hem sitenin hem de kartın tasarımını kendim yapmış olmam nedeniyle kalbimde yeri olan bir proje. 
+[Siteyi ziyaret et](https://ozanarslan2424.github.io/tpocgkart/)
 
 ## Kullanım: 
 Tanıtım amaçlı bir site olduğu için 3 adet section'dan oluşuyor: hero, discounts ve application. 
